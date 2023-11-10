@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: ; */
+}
+
+.myImage {
+    z-index: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tabuleiro {
+    z-index: 1;
+    border: 3px solid #484349;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+.casa {
+    width: 75px;
+    height: 75px;
+}
+
+.branca {
+    background-color: #F7F0F0;
+}
+
+.preta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #484349;
+}
+
+.peca {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px solid #F7F0F0;
+    background-color: #484349;
+}
+
+.inimiga {
+    background-color: #5FBB97;
+}
+
+.aliada {
+    background-color: #FF7E6B;
+}
+
+.dama .inimiga {
+    background-image: url(assets/pablo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dama .aliada { 
+    background-image: url(assets/mike-wazowski.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
